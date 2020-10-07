@@ -6,4 +6,12 @@ class Restaurant
     @name = name
     @dishes = []
   end
+
+  def closing_time(hours)
+    if hours == 8
+    @opening_time = '18:00'
+  elsif hours == 7
+    @opening_time = '23:00'
+   end
+  end
 end
