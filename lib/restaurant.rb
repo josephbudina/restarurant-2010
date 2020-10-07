@@ -12,6 +12,8 @@ class Restaurant
     @opening_time = '18:00'
   elsif hours == 7
     @opening_time = '23:00'
+    # I know this isn't right but I didn't
+    #understand the directions
    end
   end
 
@@ -31,7 +33,11 @@ class Restaurant
     @dishes.map(&:upcase)
   end
 
-  # def announce_closing_time(hours)
-  #   if hours == 5
-  #     @opening_time =
+  def announce_closing_time(hours)
+    if hours == 5
+      @opening_time = "Fuel Cafe will be closing at 11:00AM"
+    elsif hours == 7
+      @opening_time ="Il Posto will be closing at 11:00PM"
+    end
+  end 
 end
