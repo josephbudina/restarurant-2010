@@ -28,6 +28,10 @@ class Restaurant
   end
 
   def menu_dish_names
-    @dishes 
+    @dishes.map(&:upcase)
   end
+
+  # def announce_closing_time(hours)
+  #   if hours == 5
+  #     @opening_time =
 end
