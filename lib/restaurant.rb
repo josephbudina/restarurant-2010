@@ -25,5 +25,9 @@ class Restaurant
     else opening_time == '16:00'
       false
     end
-  end 
+  end
+
+  def menu_dish_names
+    @dishes 
+  end
 end
