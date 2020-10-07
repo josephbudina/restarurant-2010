@@ -14,4 +14,8 @@ class Restaurant
     @opening_time = '23:00'
    end
   end
+
+  def add_dish(food)
+    @dishes << food
+  end 
 end
