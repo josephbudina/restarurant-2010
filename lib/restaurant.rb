@@ -17,5 +17,13 @@ class Restaurant
 
   def add_dish(food)
     @dishes << food
+  end
+
+  def open_for_lunch?
+    if opening_time == '10:00'
+      true
+    else opening_time == '16:00'
+      false
+    end
   end 
 end
